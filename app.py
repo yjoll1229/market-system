@@ -47,7 +47,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 2. 기본 경로 및 설정 (노트북 경로로 수정됨)
-BASE_DIR = r'C:\Users\이영조\Desktop\전산'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILE_PATH = os.path.join(BASE_DIR, 'orders.csv')
 IGNORE_FILE = os.path.join(BASE_DIR, 'ignore_list.txt')
 KEYWORD_FILE = os.path.join(BASE_DIR, 'keywords.txt')
