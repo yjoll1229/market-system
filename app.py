@@ -2,6 +2,20 @@ import streamlit as st
 import pandas as pd
 import os
 import time
+import sys
+
+# [추가됨] 윈도우 환경이 아닐 때(웹 서버) 에러 방지
+if sys.platform == "win32":
+    try:
+        from pywinauto import Desktop
+        import pyperclip
+    except ImportError:
+        Desktop = None
+        pyperclip = None
+else:
+    # 리눅스 서버(웹 배포 환경)에서는 윈도우 전용 라이브러리를 None으로 처리
+    Desktop = None
+    pyperclip = None
 
 # 1. 페이지 설정 (넓은 화면 유지)
 st.set_page_config(page_title="범호마켓 전산시스템", layout="wide", initial_sidebar_state="expanded")
