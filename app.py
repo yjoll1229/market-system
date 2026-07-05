@@ -27,7 +27,7 @@ st.markdown("""
         display: block;
     }
     
-    /* 본문 헤더 스타일 (이모티콘 없이 깔끔하게) */
+    /* 본문 헤더 스타일 */
     .main-header {
         font-size: 26px;
         font-weight: 700;
@@ -46,8 +46,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 2. 기본 경로 및 설정
-BASE_DIR = r'C:\Users\young jo\Desktop\전산'
+# 2. 기본 경로 및 설정 (노트북 경로로 수정됨)
+BASE_DIR = r'C:\Users\이영조\Desktop\전산'
 FILE_PATH = os.path.join(BASE_DIR, 'orders.csv')
 IGNORE_FILE = os.path.join(BASE_DIR, 'ignore_list.txt')
 KEYWORD_FILE = os.path.join(BASE_DIR, 'keywords.txt')
@@ -72,7 +72,6 @@ with st.sidebar:
         </div>
     """, unsafe_allow_html=True)
     
-    # 이모티콘을 작고 덜 튀는 톤으로 변경
     menu = st.radio(
         "메뉴 이동",
         ["📦 주문 관리", "👥 사용자 관리", "⚙ 키워드 설정", "📊 발주 정산"]
@@ -80,6 +79,8 @@ with st.sidebar:
     st.write("---")
     st.caption("Admin Dashboard v1.2")
 
+# (메뉴별 기능 로직은 동일하므로 생략 - 위 코드와 동일하게 유지하세요)
+# [참고: 위에서 복사하신 메뉴 1~4번 코드를 그대로 이어 붙이시면 됩니다.]
 # ==========================================
 # 메뉴 1: 주문 관리
 # ==========================================

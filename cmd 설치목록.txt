@@ -1,0 +1,19 @@
+pip install pywin32
+pip install pyperclip
+pip install pywinauto
+pip install streamlit pandas
+
+메모장
+app.py  확장명 변경
+
+python -m streamlit run "C:\Users\이영조\Desktop\전산\app.py"
+
+파워쉘
+python 12.py
+
+
+
+
+
+
+

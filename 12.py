@@ -5,8 +5,8 @@ import csv
 import os
 from pywinauto import Desktop
 
-# 경로 설정
-BASE_DIR = r'C:\Users\young jo\Desktop\전산'
+# 경로 설정 (노트북 환경으로 수정됨)
+BASE_DIR = r'C:\Users\이영조\Desktop\전산'
 ORDER_FILE = os.path.join(BASE_DIR, 'orders.csv')
 IGNORE_FILE = os.path.join(BASE_DIR, 'ignore_list.txt')
 KEYWORD_FILE = os.path.join(BASE_DIR, 'keywords.txt')
@@ -19,7 +19,6 @@ def get_ignore_list():
         return [line.strip() for line in f.readlines() if line.strip()]
 
 # 2. 키워드 목록 읽기 (동적 로드)
-# keywords.txt 형식: 품목명,패턴1|패턴2|패턴3*
 def get_menu_rules():
     rules = {}
     if not os.path.exists(KEYWORD_FILE): return rules
