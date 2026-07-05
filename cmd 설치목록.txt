@@ -11,7 +11,29 @@ python -m streamlit run "C:\Users\이영조\Desktop\전산\app.py"
 파워쉘
 python 12.py
 
+변경사항 적용
+파워셀
+git add app.py
+git commit -m "app.py 코드 수정"
+git push origin main
 
+
+
+-----------------------------------------
+2단계: Streamlit Cloud 가입 및 연결
+이제 share.streamlit.io에 접속하세요.
+
+Sign up 버튼을 누르고 GitHub 계정으로 로그인합니다.
+
+로그인 후 [Create an app] 버튼을 누릅니다.
+
+Repository 항목에서 yjoll1229/market-system을 선택합니다.
+
+Branch는 main으로 둡니다.
+
+Main file path에 app.py라고 정확히 적어줍니다.
+
+[Deploy] 버튼을 누릅니다.
 
 
 

@@ -1,0 +1,6 @@
+streamlit
+pandas
+pywinauto
+pyperclip
+gitpython
+pywin32
