@@ -1,0 +1,49 @@
+0_2026년 7월 3일 금요일
+1_[이영조] [오전 12:33] My war rages on.
+2_[이영조] [오전 12:33] I'm still at war
+3_[이영조] [오전 12:33] The war is far from over
+4_[이영조] [오후 3:25] 파워쉘 로 데이터 정리 열별로
+5_2026년 7월 4일 토요일
+6_[이영조] [오전 1:24] 메인트랙 2파트 녹음
+7_1절 코러스 섹시랑데뷰 3개씩 더블링
+8_
+9_2절 you can never stop 파트 가성 더블링 2개 옥타브 더블링 2개
+10_
+11_3절 코러스 가성 파트 더블링 2개 (전부) 2절에서 쓴 섹시 랑데뷰 더블링 가져오기
+12_[이영조] [오전 1:41] 3절 도입부 더블링 트랙에 넣어보고 1절 섹시 랑데부 2개만 좆이나 다시녹음
+13_[이영조] [오전 1:41] 3절 코러스 끝에 섹시랑데뷰는 더블링 따로할지 말지 정하기
+14_2026년 7월 5일 일요일
+15_[이영조] [오전 1:17] 발주정산에 공구날짜 설정란 만들기 github로 추출
+16_[이영조] [오전 1:23] 크롤링 시간 줄이기
+17_[이영조] [오후 2:47] import time
+18_import pyperclip
+19_import re
+20_import csv
+21_import os
+22_from pywinauto import Desktop
+23_
+24_# 경로 설정
+25_BASE_DIR = r'C:\Users\young jo\Desktop\전산'
+26_ORDER_FILE = os.path.join(BASE_DIR, 'orders.csv')
+27_IGNORE_FILE = os.path.join(BASE_DIR, 'ignore_list.txt')
+28_KEYWORD_FILE = os.path.join(BASE_DIR, 'keywords.txt')
+29_
+30_# 1. 무시 목록 읽기
+31_def get_ignore_list():
+32_if not os.path.exists(IGNORE_FILE): return []
+33_with open(IGNORE_FILE, 'r', encoding='utf-8-sig') as f:
+34_return [line.strip() for line in f.readlin...
+35_[이영조] [오후 2:48] ignore_list
+36_[이영조] [오후 2:48] keywords
+37_[이영조] [오후 2:48] pip install pyperclip
+38_pip install pywinauto
+39_pip install streamlit pandas
+40_
+41_메모장
+42_app.py  확장명 변경
+43_
+44_python -m streamlit run "C:\Users\young jo\Desktop\전산\app.py" 드래그
+45_[이영조] [오후 7:16] Git hib 출력하고 노트북 세팅
+46_[이영조] [오후 7:16] 테스트
+47_[이영조] [오후 10:15] 삼겹 1
+48_[이영조] [오후 10:17] 서서갈비 1
